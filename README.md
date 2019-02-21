@@ -8,3 +8,4 @@ AI search algorithms with graph and program implementation
   * Bidirectional BFS
 * Heuristic
   * Simulated Annealing
+  * Hill Climbing

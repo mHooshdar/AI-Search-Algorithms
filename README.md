@@ -1,4 +1,4 @@
-# AI-Search-Algorithms
+# Artificial Intelligence Search Algorithms
 AI search algorithms with graph and program implementation
 
 

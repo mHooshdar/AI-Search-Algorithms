@@ -6,7 +6,7 @@ AI search algorithms with graph and program implementation
   * A - Star
   * Breadth Frst Search (BFS)
   * Bidirectional BFS
-  * Depth First Search (DFS) Unlimitied
+  * Unlimitied Depth First Search (DFS)
 * Heuristic
   * Simulated Annealing
   * Hill Climbing

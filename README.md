@@ -7,7 +7,9 @@ AI search algorithms with graph and program implementation
   * Breadth Frst Search (BFS)
   * Bidirectional BFS
   * Unlimitied Depth First Search (DFS)
+  * Limited Depth First Search
 * Heuristic
   * Simulated Annealing
   * Hill Climbing
-  * Stochastic Hill Stochastic
+  * Stochastic Hill Climbing
+  * Random Restart Hill Climbing

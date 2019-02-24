@@ -11,4 +11,5 @@ AI search algorithms with graph and program implementation
 * Heuristic
   * Simulated Annealing
   * Hill Climbing
-  * Stochastic Hill Stochastic
+  * Stochastic Hill Climbing
+  * Random Restart Hill Climbing

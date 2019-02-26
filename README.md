@@ -14,3 +14,4 @@ AI search algorithms with graph and program implementation
   * Hill Climbing
   * Stochastic Hill Climbing
   * Random Restart Hill Climbing
+  * First Choice Hill Climbing

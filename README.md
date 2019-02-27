@@ -9,6 +9,7 @@ AI search algorithms with graph and program implementation
   * Unlimitied Depth First Search (DFS)
   * Limited Depth First Search
   * Iterative Depth First Search
+  * Uniform Cost Search (UCS)
 * Heuristic
   * Simulated Annealing
   * Hill Climbing

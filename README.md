@@ -5,10 +5,10 @@ AI search algorithms with graph and program implementation
 * Classic
   * A - Star
   * Breadth Frst Search (BFS)
-  * Bidirectional BFS
+  * Bidirectional Breadth First Search
   * Unlimitied Depth First Search (DFS)
-  * Limited Depth First Search
-  * Iterative Depth First Search
+  * Depth Limited First Search
+  * Iterative Deepening Depth First Search (IDS)
   * Uniform Cost Search (UCS)
 * Heuristic
   * Simulated Annealing

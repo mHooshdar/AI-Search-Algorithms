@@ -3,7 +3,7 @@ import sys
 sys.path.insert(1, 'd:\\Git Repo\\AI-Search-Algorithms\\Classic\\Graph')
 import Graph
 import pytest
-import a_star
+from a_star import aStar
 # import ../
 
 def test_aStar():
@@ -12,7 +12,7 @@ def test_aStar():
     h = [8, 4, 4.5, 2, 2, 4, 0]
     myGraph = Graph.Graph(graph, cost)
     
-    result = a_star.aStar(myGraph, 0, 6, h, False)
+    result = aStar(myGraph, 0, 6, h, False)
     assert result["seen"] == 7
     assert result["expanded"] == 8
     assert result["cost"] == 7.5

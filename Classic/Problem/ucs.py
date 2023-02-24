@@ -16,7 +16,7 @@ def ucs(problem, isGraph):
         fWeight.append(0)
         nodePath.append([startState])
     except:
-        print "invalid start state"
+        print ("invalid start state")
 
     while f:
         minWeightIndex = fWeight.index(min(fWeight))

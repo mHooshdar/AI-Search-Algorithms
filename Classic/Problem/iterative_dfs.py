@@ -18,7 +18,7 @@ def dfsIterative(problem, isGraph):
             nodePath.append([startState])
 
         except:
-            print "invalid start state"
+            print ("invalid start state")
 
         while f:
             tempState = problem.result(tempState, f.pop(0))

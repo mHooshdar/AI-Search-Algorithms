@@ -33,8 +33,8 @@ def genetic(problem, numberOfRepeat, n, mutationProb):
 
     while numberOfRepeat > 0:
         if problem.getGoal() in individual:
-            print "best answer"
-            print "number of repeats:", counter
+            print ("best answer")
+            print ("number of repeats:", counter)
             return {"individual": individual, "maxFitness": maxFitnessOutput, "minFitness": minFitnessOutput, "averageFitness": avrageFitnessOutput}
         prob = list()
         parents = list()
@@ -42,18 +42,18 @@ def genetic(problem, numberOfRepeat, n, mutationProb):
         fitnessMaxes = list()
         individualMaxes = list()
 
-        print "individual:", individual
+        print ("individual:", individual)
         for i in individual:
             individualFitness.append(problem.getFitness()[problem.getGeneratedNumbers().index(i)])
 
-        print "fitness:", individualFitness
+        print ("fitness:", individualFitness)
         for i in range(len(individualFitness)):
             for j in range(individualFitness[i]):
                 prob.append(i)
 
         for i in range(n):
             parents.append(individual[random.choice(prob)])
-        print "parents:", parents
+        print ("parents:", parents)
 
         if n % 2 != 0:
             child = list(random.choice(parents))
@@ -68,9 +68,9 @@ def genetic(problem, numberOfRepeat, n, mutationProb):
                 maxFitnessOutput.append(max(individualFitness))
                 minFitnessOutput.append(min(individualFitness))
                 avrageFitnessOutput.append(sum(individualFitness) / float(len(individualFitness)))
-                print "max fitness:", max(individualFitness)
-                print "min fitness:", min(individualFitness)
-                print "max fitness:", sum(individualFitness) / float(len(individualFitness))
+                print ("max fitness:", max(individualFitness))
+                print ("min fitness:", min(individualFitness))
+                print ("max fitness:", sum(individualFitness) / float(len(individualFitness)))
         for i in xrange(0, len(parents), 2):
             cr1 = list(parents[i])
             cr2 = list(parents[i + 1])
@@ -94,13 +94,13 @@ def genetic(problem, numberOfRepeat, n, mutationProb):
             maxFitnessOutput.append(max(individualFitness))
             minFitnessOutput.append(min(individualFitness))
             avrageFitnessOutput.append(sum(individualFitness) / float(len(individualFitness)))
-            print "max fitness:", max(individualFitness)
-            print "min fitness:", min(individualFitness)
-            print "max fitness:", sum(individualFitness) / float(len(individualFitness))
-            print "cr1:", cr1
-            print "cr2:", cr2
-            print "child1:", child1
-            print "child2:", child2
+            print ("max fitness:", max(individualFitness))
+            print ("min fitness:", min(individualFitness))
+            print ("max fitness:", sum(individualFitness) / float(len(individualFitness)))
+            print ("cr1:", cr1)
+            print ("cr2:", cr2)
+            print ("child1:", child1)
+            print ("child2:", child2)
 
         for j in range(n):
             maxFitness = max(individualFitness)
@@ -115,9 +115,9 @@ def genetic(problem, numberOfRepeat, n, mutationProb):
         counter += 1
         individualFitness = list(fitnessMaxes)
         individual = list(individualMaxes)
-        print "individual: ", individual
-        print "fitness: ", individualFitness, "\n"
+        print ("individual: ", individual)
+        print ("fitness: ", individualFitness, "\n")
 
-        print ""
+        print ("")
     return {"individual": individual, "maxFitness": maxFitnessOutput, "minFitness": minFitnessOutput,
             "averageFitness": avrageFitnessOutput}

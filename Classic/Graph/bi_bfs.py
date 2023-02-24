@@ -21,7 +21,7 @@ def bi_bfs(graph, startState, endState, isGraph):
         seenNodes += 1
         nodePathB.append([endState])
     except:
-        print "invalid start state"
+        print ("invalid start state")
 
     while fR or fB:
         if fR:
@@ -76,4 +76,4 @@ def bi_bfs(graph, startState, endState, isGraph):
 # graph = [[], [2, 3, 4, 8], [5], [6, 7, 10], [8], [9, 10], [], [], [], [], [], []]
 graph = [[1, 7], [0, 2, 7], [1, 3, 5, 8], [2, 4, 5], [3, 5], [2, 3, 4, 6], [5, 7, 8], [0, 1, 6, 8], [2, 6, 7]]
 
-print bi_bfs(graph, 0, 8, True)
+print (bi_bfs(graph, 0, 8, True))

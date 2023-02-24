@@ -13,7 +13,7 @@ def dfsUnlimited(graph, startState, endState, isGraph):
         seenNodes += 1
         nodePath.append([startState])
     except:
-        print "invalid start state"
+        print ("invalid start state")
 
     while f:
         tempState = f.pop(0)
@@ -39,4 +39,4 @@ def dfsUnlimited(graph, startState, endState, isGraph):
 graph = [[], [3, 4, 2], [5], [1], [1], [9, 10, 8], [], [], [], [], [], []]
 # graph = [[], [2, 3, 4, 8], [5], [6, 7, 10], [8], [9, 10], [], [], [], [], [], []]
 
-print dfsUnlimited(graph, 1, 10, True)
+print (dfsUnlimited(graph, 1, 10, True))

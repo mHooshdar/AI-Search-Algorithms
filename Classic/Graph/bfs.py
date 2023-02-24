@@ -13,7 +13,7 @@ def bfs(graph, startState, endState, isGraph):
         seenNodes += 1
         nodePath.append([startState])
     except:
-        print "invalid start state"
+        print ("invalid start state")
 
     while f:
         tempState = f.pop(0)
@@ -37,4 +37,4 @@ def bfs(graph, startState, endState, isGraph):
 # graph = [[1, 2], [0, 3], [0, 4], [1, 5], [2, 6], [3, 6], [4, 5]]
 graph = [[], [2, 3, 4, 8], [5], [6, 7, 10], [8], [9, 10], [], [], [], [], [], []]
 
-print bfs(graph, 1, 6, False)
+print (bfs(graph, 1, 6, False))

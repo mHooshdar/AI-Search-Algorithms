@@ -18,6 +18,6 @@ def hillClimbingSimple(problem):
                 currentState = node
                 counter += 1
         if counter == 0:
-            print "Local"
+            print ("Local")
             return {"seen": seenNodes, "expanded": expandedNodes, "route": nodePath, "fitness": problem.getFitness()[currentState]}
             

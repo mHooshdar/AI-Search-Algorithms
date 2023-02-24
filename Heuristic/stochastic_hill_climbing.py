@@ -19,6 +19,6 @@ def hillClimbingStochastic(problem):
         if problem.goalTest(currentState):
             return {"seen": seenNodes, "expanded": expandedNodes, "route": nodePath, "fitness": problem.getFitness()[currentState]}
         if counter == 0:
-            print "Local"
+            print ("Local")
             return {"seen": seenNodes, "expanded": expandedNodes, "route": nodePath, "fitness": problem.getFitness()[currentState]}
         currentState = random.choice(bestList)

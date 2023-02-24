@@ -15,7 +15,7 @@ def ucs(graph, startState, endState, isGraph):
         fWeight.append(0)
         nodePath.append([startState])
     except:
-        print "invalid start state"
+        print ("invalid start state")
 
     while f:
         minWeightIndex = fWeight.index(min(fWeight))
@@ -51,4 +51,4 @@ graph = [[1, 7], [0, 2, 7], [1, 3, 5, 8], [2, 4, 5], [3, 5], [2, 3, 4, 6], [5, 7
 cost = [[4, 8], [4, 8, 11], [8, 7, 4, 2], [7, 9, 14], [9, 10], [4, 14, 10, 2], [2, 1, 6], [8, 11, 1, 7], [2, 6, 7]]
 
 myGraph = Graph.Graph(graph, cost)
-print ucs(myGraph, 0, 8, False)
+print (ucs(myGraph, 0, 8, False))

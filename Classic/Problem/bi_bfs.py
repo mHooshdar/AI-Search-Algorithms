@@ -26,7 +26,7 @@ def biBfs(problem, isGraph):
         nodePathB.append([endState])
 
     except:
-        print "invalid start state"
+        print ("invalid start state")
 
     while fR or fB:
         if fR:

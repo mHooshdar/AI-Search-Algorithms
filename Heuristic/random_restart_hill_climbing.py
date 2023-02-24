@@ -1,3 +1,5 @@
+import random
+
 def hillClimbingRandomRestart(problem):
     nodePath = list()
     currentState = problem.initialState()

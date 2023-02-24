@@ -1,3 +1,4 @@
+import random
 def hillClimbingStochastic(problem):
     nodePath = list()
     currentState = problem.initialState()

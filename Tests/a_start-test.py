@@ -1,5 +1,7 @@
 import Graph
 import pytest
+from .Classic.Graph.a_star import aStar
+# import ../
 
 def test_aStar():
     graph = [[1, 2], [0, 3], [0, 4], [1, 5], [2, 6], [3, 6], [4, 5]]

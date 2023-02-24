@@ -1,6 +1,5 @@
 import random
 import math
-import 
 # state formats : [[1, 2, 3], [1, 0, 3], ...]
 def genetic(problem, numberOfRepeat, n, mutationProb):
     counter = 0

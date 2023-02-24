@@ -33,3 +33,6 @@ jobs:
         
     - name: Run tests
       run: pytest Tests/test*
+      
+    - name: Run La
+      run: ls 

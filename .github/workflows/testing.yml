@@ -36,8 +36,8 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
           
-      - name: Install package
-        run: python setup.py install
+#       - name: Install package
+#         run: python setup.py install
         # Install pytest (you can use some other testing utility)
       - name: Install pytest
         run: |

@@ -15,3 +15,6 @@ def test_aStar():
     assert result["cost"] == 7.5
     assert result["max memory"] == 3
     assert result["route"] == [0, 2, 4, 5, 6]
+
+if __name__ == '__main__':
+    test_aStar()

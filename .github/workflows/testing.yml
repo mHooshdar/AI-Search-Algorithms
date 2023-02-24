@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         # Run in all these versions of Python
-        python-version: [3.5, 3.6, 3.7, 3.8, 3.9, 3.10, 3.11]
+        python-version: 3.x
 
     steps:
         # Checkout the latest code from the repo
@@ -33,4 +33,4 @@ jobs:
           pip install pytest
         # Run the tests. I'm using pytest and the file is in the tests directory.
       - name: Run tests
-        run: pytest Tests/*test*
+        run: pytest Tests/test*

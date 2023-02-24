@@ -1,1 +1,2 @@
 pytest
+from Classic.Graph.Graph import Graph

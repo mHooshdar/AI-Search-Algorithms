@@ -1,3 +1,6 @@
+import random
+import math
+import 
 # state formats : [[1, 2, 3], [1, 0, 3], ...]
 def genetic(problem, numberOfRepeat, n, mutationProb):
     counter = 0
@@ -71,7 +74,7 @@ def genetic(problem, numberOfRepeat, n, mutationProb):
                 print ("max fitness:", max(individualFitness))
                 print ("min fitness:", min(individualFitness))
                 print ("max fitness:", sum(individualFitness) / float(len(individualFitness)))
-        for i in xrange(0, len(parents), 2):
+        for i in range(0, len(parents), 2):
             cr1 = list(parents[i])
             cr2 = list(parents[i + 1])
             crPos = random.randrange(len(cr1))

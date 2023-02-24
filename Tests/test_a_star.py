@@ -1,6 +1,9 @@
+import sys
+# print(sys.path)
+sys.path.insert(1, 'd:\\Git Repo\\AI-Search-Algorithms\\Classic\\Graph')
 import Graph
 import pytest
-from .Classic.Graph.a_star import aStar
+import a_star
 # import ../
 
 def test_aStar():
@@ -9,12 +12,9 @@ def test_aStar():
     h = [8, 4, 4.5, 2, 2, 4, 0]
     myGraph = Graph.Graph(graph, cost)
     
-    result = aStar(myGraph, 0, 6, h, False)
+    result = a_star.aStar(myGraph, 0, 6, h, False)
     assert result["seen"] == 7
     assert result["expanded"] == 8
     assert result["cost"] == 7.5
     assert result["max memory"] == 3
     assert result["route"] == [0, 2, 4, 5, 6]
-
-if __name__ == '__main__':
-    test_aStar()

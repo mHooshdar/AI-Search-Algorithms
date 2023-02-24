@@ -15,7 +15,7 @@ def aStar(graph, startState, endState, h,isGraph):
         fWeight.append(h[startState])
         nodePath.append([startState])
     except:
-        print "invalid start state"
+        print ("invalid start state")
 
     while f:
         minWeightIndex = fWeight.index(min(fWeight))
@@ -52,4 +52,4 @@ graph = [[1, 2], [0, 3], [0, 4], [1, 5], [2, 6], [3, 6], [4, 5]]
 cost = [[1.5, 2], [1.5, 2], [2, 3], [2, 3], [3, 2], [3, 4], [2, 4]]
 h = [8, 4, 4.5, 2, 2, 4, 0]
 myGraph = Graph.Graph(graph, cost)
-print aStar(myGraph, 0, 6, h, False)
+print (aStar(myGraph, 0, 6, h, False))

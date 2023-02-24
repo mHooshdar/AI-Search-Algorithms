@@ -16,7 +16,7 @@ def aStar(problem, isGraph):
         fWeight.append(problem.heuristic(startState))
         nodePath.append([startState])
     except:
-        print "invalid start state"
+        print ("invalid start state")
 
     while f:
         minWeightIndex = fWeight.index(min(fWeight))

@@ -1,9 +1,10 @@
 import sys
 # print(sys.path)
 sys.path.insert(0, 'd:\\Git Repo\\AI-Search-Algorithms\\Classic\\Graph')
+from graphClass import Graph
 import a_star
 import pytest
-from graphClass import Graph
+
 # import ../
     
 def test_aStar():
